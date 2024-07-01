@@ -21,7 +21,7 @@ void CyPlayerPythonInterface2(python::class_<CyPlayer>& x)
 	python::scope().attr("__doc__") = "Civilization IV Player Class"; 
 	x
 		.def("AI_updateFoundValues", &CyPlayer::AI_updateFoundValues, "void (bool bStartingLoc)")
-		.def("AI_foundValue", &CyPlayer::AI_foundValue, "int (int iX, int iY, int iMinUnitRange/* = -1*/, bool bStartingLoc/* = false*/)")
+		.def("AI_foundValue", &CyPlayer::AI_foundValue, "int (int iX, int iY, int iMinUnitRange, bool bStartingLoc)")
 		.def("AI_isFinancialTrouble", &CyPlayer::AI_isFinancialTrouble, "bool ()")
 		.def("AI_demandRebukedWar", &CyPlayer::AI_demandRebukedWar, "bool (int (PlayerTypes) ePlayer)")
 		.def("AI_getAttitude", &CyPlayer::AI_getAttitude, "AttitudeTypes (int (PlayerTypes) ePlayer) - Gets the attitude of the player towards the player passed in")
@@ -47,7 +47,7 @@ void CyPlayerPythonInterface2(python::class_<CyPlayer>& x)
 		.def("getCultureHistory", &CyPlayer::getCultureHistory, "int (int iTurn)")
 		.def("getEspionageHistory", &CyPlayer::getEspionageHistory, "int (int iTurn)")
 
-		.def("getScriptData", &CyPlayer::getScriptData, "string getScriptData() - Get stored custom data (via pickle)")
+		.def("getScriptData", &CyPlayer::getScriptData, "string () - Get stored custom data (via pickle)")
 		.def("setScriptData", &CyPlayer::setScriptData, "void (string szNewValue) - Set stored custom data (via pickle)")
 
 		.def("chooseTech", &CyPlayer::chooseTech, "void (int iDiscover, wstring szText, bool bFront)")

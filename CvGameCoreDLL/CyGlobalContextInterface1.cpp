@@ -37,7 +37,7 @@ void CyGlobalContextPythonInterface1(python::class_<CyGlobalContext>& x)
 		.def("getBonusClassInfo", &CyGlobalContext::getBonusClassInfo, python::return_value_policy<python::reference_existing_object>(), "CvBonusClassInfo* (int (BonusClassTypes) i) - CvInfo for BonusID")
 
 		.def("getNumBonusInfos", &CyGlobalContext::getNumBonusInfos, "() - Total Bonus Infos XML\\Terrain\\CIV4BonusInfos.xml")
-		.def("getBonusInfo", &CyGlobalContext::getBonusInfo, python::return_value_policy<python::reference_existing_object>(), "CvBonusInfo* (int ((BonusTypes) - CvInfo for BonusID")
+		.def("getBonusInfo", &CyGlobalContext::getBonusInfo, python::return_value_policy<python::reference_existing_object>(), "CvBonusInfo* (int (BonusTypes) i) - CvInfo for BonusID")
 
 		.def("getNumFeatureInfos", &CyGlobalContext::getNumFeatureInfos, "() - Total Feature Infos XML\\Terrain\\CIV4FeatureInfos.xml")
 		.def("getFeatureInfo", &CyGlobalContext::getFeatureInfo, python::return_value_policy<python::reference_existing_object>(), "CvFeatureInfo* (int i) - CvInfo for FeatureID")

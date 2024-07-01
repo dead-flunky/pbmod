@@ -14,7 +14,7 @@ void CyGameTextMgrInterface()
 
 		.def("Reset", &CyGameTextMgr::Reset, "void ()")
 		.def("getTimeStr", &CyGameTextMgr::getTimeStr, "wstring (int iGameTurn, bool bSave)")
-		.def("getDateStr", &CyGameTextMgr::getDateStr, "wstring getDateStr(int iGameTurn, bool bSave, int (CalendarTypes) eCalendar, int iStartYear, int (int iGameTurn, bool bSave, int (CalendarTypes) eCalendar, int iStartYear, int (GameSpeedTypes) eSpeed)")
+		.def("getDateStr", &CyGameTextMgr::getDateStr, "wstring (int iGameTurn, bool bSave, int (CalendarTypes) eCalendar, int iStartYear, int (int iGameTurn, bool bSave, int (CalendarTypes) eCalendar, int iStartYear, int (GameSpeedTypes) eSpeed)")
 		.def("getInterfaceTimeStr", &CyGameTextMgr::getInterfaceTimeStr, "wstring (int (PlayerTypes) iPlayer)")
 		.def("getGoldStr", &CyGameTextMgr::getGoldStr, "wstring (int (PlayerTypes) iPlayer)")
 		.def("getResearchStr", &CyGameTextMgr::getResearchStr, "wstring (int (PlayerTypes) iPlayer)")

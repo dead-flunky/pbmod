@@ -12,3 +12,11 @@ CvGameCoreDLL.sdf
 PB Mod_v9/PB Mod_*.ini
 tests/sdk/setup_dll_build_with_wine.config
 tests/sdk/.*
+/CvGameCoreDLL/_UpgradeReport_Files
+CvGameCoreDLL/CvGameCoreDLL.vcxproj.filters
+CvGameCoreDLL/CvGameCoreDLL.vcxproj.filters
+CvGameCoreDLL/CvGameCoreDLL.vcxproj
+CvGameCoreDLL/CvGameCoreDLL.suo
+CvGameCoreDLL/Makefile
+CvGameCoreDLL/UpgradeLog.XML
+CvGameCoreDLL/Makefile

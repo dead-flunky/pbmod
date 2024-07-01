@@ -485,7 +485,7 @@ void CyInfoPythonInterface3()
 		;
 
 	python::class_<CvDiplomacyInfo, python::bases<CvInfoBase> >("CvDiplomacyInfo")
-		.def("getResponse", &CvDiplomacyInfo::getResponse,  python::return_value_policy<python::reference_existing_object>(), "const CvDiplomacyResponse (int iNum)")
+		.def("getResponse", &CvDiplomacyInfo::getResponse,  python::return_value_policy<python::reference_existing_object>(), "CvDiplomacyResponse (int iNum)")
 		.def("getNumResponses", &CvDiplomacyInfo::getNumResponses, "int ()")
 
 		.def("getCivilizationTypes", &CvDiplomacyInfo::getCivilizationTypes, "bool (int i)")
@@ -607,7 +607,7 @@ void CyInfoPythonInterface3()
 		.def("getNumPrereqAndTechs", &CvEventTriggerInfo::getNumPrereqAndTechs, "int ()")
 		.def("getObsoleteTech", &CvEventTriggerInfo::getObsoleteTech, "int ()")
 		.def("getNumObsoleteTechs", &CvEventTriggerInfo::getNumObsoleteTechs, "int ()")
-		.def("getEvent", &CvEventTriggerInfo::getEvent, "const ()")
+		.def("getEvent", &CvEventTriggerInfo::getEvent, "int (int i)")
 		.def("getNumEvents", &CvEventTriggerInfo::getNumEvents, "int ()")
 		.def("getPrereqEvent", &CvEventTriggerInfo::getPrereqEvent, "int (int i)")
 		.def("getNumPrereqEvents", &CvEventTriggerInfo::getNumPrereqEvents, "int ()")
