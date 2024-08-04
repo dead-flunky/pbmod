@@ -20,3 +20,9 @@ CvGameCoreDLL/CvGameCoreDLL.suo
 CvGameCoreDLL/Makefile
 CvGameCoreDLL/UpgradeLog.XML
 CvGameCoreDLL/Makefile
+CvGameCoreDLL/CvGameCoreDLL.sln
+*.suo
+*.vcproj
+*.vcxproj
+*.filters
+CvGameCoreDLL/Makefile
